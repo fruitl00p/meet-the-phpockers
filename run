@@ -1,0 +1,1 @@
+docker run -d -p 8000:8000 -v ~/projects/meet-the-phpockers/slides.md:/revealjs/md/slides.md amouat/revealjs:latest
