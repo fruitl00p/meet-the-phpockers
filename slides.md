@@ -53,7 +53,7 @@ Once upon a time...
  - LXC
  - Docker
 
-![Server to docker](/js/assets/server-to-docker.png)
+![Server to docker](/js/assets/server-to-docker.jpg)
 
 ---
 
