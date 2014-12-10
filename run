@@ -1,1 +1,1 @@
-docker run -d -p 8000:8000 -v ~/projects/meet-the-phpockers/slides.md:/revealjs/md/slides.md amouat/revealjs:latest
+docker run --name phockers -d -p 8000:8000 -v $(pwd)/assets/:/revealjs/js/assets/ -v $(pwd)/slides.md:/revealjs/md/slides.md amouat/revealjs:latest

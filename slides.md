@@ -1,5 +1,6 @@
+<section data-markdown="slides.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:"></section>
+
 # Meet the PHPockers
-<br/>
 Robin Speekenbrink
 
 18 december 2014
@@ -20,6 +21,8 @@ happy-go-dev-vy
 # Disclaimer
 
 I just dont know and this is my first _real_ talk
+
+Note: Devops / Dont know / Rocket / Docker in flux / CoreOS_UbuntuCore_Google / Young eco system
 
 ---
 
@@ -50,7 +53,7 @@ Once upon a time...
  - LXC
  - Docker
 
-![Server to docker](/assets/server-to-docker.png)
+![Server to docker](/js/assets/server-to-docker.png)
 
 ---
 
@@ -59,18 +62,20 @@ Once upon a time...
 Containers made easy
  = awesome!
 
-``` docker run --rm -it ubuntu bash ```
+<pre><code data-trim>docker run --rm -it ubuntu bash</pre>
 
 -
 
 # Docker - the essentials
 
-virtual machines +  git + native performance = awesome
+virtual machines +  git + native performance = awesome = docker
 
  - opensource
  - OS level isolation
  - layered filesystem
  - shared kernel (cgroups)
+
+Note: hard to explain, easy to use
 
 - 
 
@@ -93,20 +98,20 @@ virtual machines +  git + native performance = awesome
  - light weight
  - easy version management of complete stack
 
---- 
+---
 
-# Wait, wasnt this a PHP meetup?
+# Wait, wasn't this a PHP meetup?
 
 Yes!
 Say hello to docker from a PHP standpoint
 
-``` docker run --rm -it -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp php php demo/hello.php ```
+<pre><code data-trim>docker run --rm -it -v $(pwd):/myapp -w /myapp php php demo/hello.php</pre>
 
 Want to try it with PHP 5.5 ?
 
-``` docker run --rm -it -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp php:5.5-cli php demo/hello.php ```
+<pre><code data-trim>docker run --rm -it -v $(pwd):/myapp -w /myapp php:5.5-cli php demo/hello.php</pre>
 
-``` docker run --rm -it -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp php:5.5 php demo/hello.php ```
+<pre><code data-trim>docker run --rm -it -v $(pwd):/myapp -w /myapp php:5.5 php demo/hello.php</pre>
 
 - 
 
@@ -129,6 +134,8 @@ Want to try it with PHP 5.5 ?
  - ING
  - Tweakers (?)
 
+Note: Google launches 5M containers daily
+
 -
 
 # Docker in development
@@ -141,9 +148,10 @@ Want to try it with PHP 5.5 ?
 
 # Docker vs ...
  
- - straight up nuthin
+ - straight up nuthin'
  - Vagrant
  - Heroku / Appengine platforms?
+ - Alternatives (Rocket / Chroot / BSD Jails / ... )
 
 ---
 
@@ -162,10 +170,10 @@ Want to try it with PHP 5.5 ?
 -
 
 ## Pro's
+
  - fast
  - easy
  - hipster approved
- - `reversi`
  - lightweight resource consumption
  - production ready - now
 
@@ -175,9 +183,16 @@ Want to try it with PHP 5.5 ?
 
  - easy-peasy-1-2-threezy
  - docker index
- - dokku / dokku-alt / google container engine / AWS ?
+ - dokku / dokku-alt / Google / AWS
  - fig
  - young but strong!
+ 
+---
+
+# demo time
+
+Note: see how it works for this presentation / dokku / monitoring agents / mongodb / memcached
+Note: 
 
 ---
 
