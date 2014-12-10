@@ -143,6 +143,7 @@ Note: Google launches 5M containers daily
  - environment vs production
  - design the image, build it and push to registry
  - PHPstorm integration
+ - fig
 
 -
 
@@ -186,7 +187,18 @@ Note: Google launches 5M containers daily
  - dokku / dokku-alt / Google / AWS
  - fig
  - young but strong!
+
+-
+
+## The future for containers
  
+ - orchestration
+ - multi hosts
+ - monitoring
+ - interchangeble engines (Rocket / Google)
+ - Windows support
+ - native apple executor
+
 ---
 
 # demo time
