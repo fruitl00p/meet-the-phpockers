@@ -1,11 +1,10 @@
-<section data-markdown="slides.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:"></section>
-
 # Meet the PHPockers
 Robin Speekenbrink
 
 18 december 2014
 AmsterdamPHP
 
+<section data-markdown="slides.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:"></section>
 ---
 
 ## A brief overview of /me
@@ -52,6 +51,10 @@ Once upon a time...
  - Vagrant
  - LXC
  - Docker
+
+-
+
+# ... continued
 
 ![Server to docker](/js/assets/server-to-docker.jpg)
 
@@ -130,9 +133,10 @@ Want to try it with PHP 5.5 ?
  - Iron.io
  - NewRelic
  - AWS
- - Kingsquare
+ - Spotify
  - ING
- - Tweakers (?)
+ - Kingsquare
+ - Tweakers <sup>(?)</sup>
 
 Note: Google launches 5M containers daily
 
@@ -198,7 +202,19 @@ Note: Google launches 5M containers daily
  - interchangeble engines (Rocket / Google)
  - Windows support
  - native apple executor
+ 
+-
 
+## the docker way of life
+
+![The docker ecosystem](/js/assets/eco.png)
+(september 2014)
+-
+
+## tech on the rise
+
+![Metrics](/js/assets/metrics_graphic.jpg)
+(september december 2014)
 ---
 
 # demo time
@@ -210,12 +226,20 @@ Note:
 
 # links / tools etc
 
- - docker.com
- - [The Docker book](www.dockerbook.com/)
+ - [Docker](www.docker.com)
+ - [The Docker book](www.dockerbook.com)
  - [Dokku](github.com/progrium/dokku)
  - [Wercker](wercker.com)
  - [Docker Amsterdam meetup group](www.meetup.com/Docker-Amsterdam/)
  
+-
+
+## Image / data Credits
+  
+  - [Docker blog](http://blog.docker.com/)
+  - [highscalability.com](http://highscalability.com/)
+  
+
 ---
 
  # Fin
