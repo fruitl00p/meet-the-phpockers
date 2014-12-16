@@ -21,7 +21,14 @@ happy-go-dev-vy
 
 I just dont know and this is my first _real_ talk
 
-Note: Devops / Dont know / Rocket / Docker in flux / CoreOS_UbuntuCore_Google / Young eco system
+Note:
+
+ - no ops / dev care: leave the room
+ - Devops 
+ - Dont know 
+ - Docker in flux (Rocket / 1.4)
+ - CoreOS / UbuntuCore / Google / Young eco system
+ - no regurgitation of docs / slides!
 
 ---
 
@@ -30,9 +37,15 @@ Note: Devops / Dont know / Rocket / Docker in flux / CoreOS_UbuntuCore_Google / 
  - Servers - a brief history
  - Docker
  - err... PHP ?
+ - Docker usage
  - Docker vs ...
  - So?
  - Awsomesauce
+ - DDD
+ 
+Note:
+
+ - DDD Dont Do Demo's
 
 ---
 
@@ -40,7 +53,7 @@ Note: Devops / Dont know / Rocket / Docker in flux / CoreOS_UbuntuCore_Google / 
 
 Once upon a time...
 
----
+-
 
 # From server to droplet
  
@@ -78,7 +91,8 @@ virtual machines +  git + native performance = awesome = docker
  - layered filesystem
  - shared kernel (cgroups)
 
-Note: hard to explain, easy to use
+Note:
+hard to explain, easy to use
 
 - 
 
@@ -90,7 +104,10 @@ Note: hard to explain, easy to use
  - easy(ish) to scale
  - allows for faster moving applications
  - utilization limiting
- 
+
+Note:
+stateless nodes
+
 - 
 
 # Docker from dev
@@ -108,13 +125,13 @@ Note: hard to explain, easy to use
 Yes!
 Say hello to docker from a PHP standpoint
 
-<pre><code data-trim>docker run --rm -it -v $(pwd):/myapp -w /myapp php php demo/hello.php</pre>
+<pre><code data-trim>docker run -v $(pwd):/app -w /app php php demo/hello.php</pre>
 
 Want to try it with PHP 5.5 ?
 
-<pre><code data-trim>docker run --rm -it -v $(pwd):/myapp -w /myapp php:5.5-cli php demo/hello.php</pre>
+<pre><code data-trim>docker run -v $(pwd):/app -w /app php:5.5 php demo/hello.php</pre>
 
-<pre><code data-trim>docker run --rm -it -v $(pwd):/myapp -w /myapp php:5.5 php demo/hello.php</pre>
+<pre><code data-trim>docker run -v $(pwd):/app -w /app php:5.6 php demo/hello.php</pre>
 
 - 
 
@@ -136,9 +153,13 @@ Want to try it with PHP 5.5 ?
  - Spotify
  - ING
  - Kingsquare
- - Tweakers <sup>(?)</sup>
+ - Tweakers
 
-Note: Google launches 5M containers daily
+Note:
+
+ - Google launches 5M containers daily
+ - Tweakers (partially)
+ - Wercker
 
 -
 
@@ -196,35 +217,42 @@ Note: Google launches 5M containers daily
 
 ## The future for containers
  
- - orchestration
- - multi hosts
+ - orchestration <sup>1.4</sup>
+ - multi hosts <sup>1.4</sup>
  - monitoring
- - interchangeble engines (Rocket / Google)
+ - interchangeable engines (Rocket / Google)
  - Windows support
- - native apple executor
+ - native Apple/Mac executor
  
 -
 
-## the docker way of life
+## Docker way of life
 
 ![The docker ecosystem](/js/assets/eco.png)
 (september 2014)
 -
 
-## tech on the rise
+## Tech on the rise
 
 ![Metrics](/js/assets/metrics_graphic.jpg)
-(september december 2014)
+(december 2014)
 ---
 
-# demo time
+# Demo time
 
-Note: see how it works for this presentation / dokku / monitoring agents / mongodb / memcached
-Note: 
+...
+
+Note:
+ 
+ - see how it works for this presentation
+ - dokku
+ - monitoring agents 
+ - mongodb 
+ - memcached
 
 ---
 
-# links / tools etc
+# Links / tools etc
 
  - [Docker](www.docker.com)
  - [The Docker book](www.dockerbook.com)
