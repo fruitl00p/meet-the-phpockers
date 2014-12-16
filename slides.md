@@ -245,10 +245,12 @@ Note:
 Note:
  
  - see how it works for this presentation
+ - interactive bash + commit
  - dokku
  - monitoring agents 
  - mongodb 
  - memcached
+ - look at https://github.com/docker/machine 
 
 ---
 
